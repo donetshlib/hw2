@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypeScript ДЗ - Перевірка</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>TypeScript Домашнє Завдання - Перевірка</h1>
+
+    <!-- Завдання 1: Enums -->
+    <section>
+        <h2>1. Enums - Дні тижня</h2>
+        <select id="daySelect">
+            <option value="Monday">Понеділок</option>
+            <option value="Tuesday">Вівторок</option>
+            <option value="Wednesday">Середа</option>
+            <option value="Thursday">Четвер</option>
+            <option value="Friday">П'ятниця</option>
+            <option value="Saturday">Субота</option>
+            <option value="Sunday">Неділя</option>
+        </select>
+        <button onclick="checkDay()">Перевірити активність</button>
+        <p id="activityResult"></p>
+    </section>
+
+    <!-- Завдання 2: Generics -->
+    <section>
+        <h2>2. Generics - Черга</h2>
+        
+        <h3>Черга рядків:</h3>
+        <input type="text" id="stringInput" placeholder="Введіть рядок">
+        <button onclick="addString()">Додати рядок</button>
+        <button onclick="removeString()">Видалити рядок</button>
+        <p id="stringQueueResult"></p>
+
+        <h3>Черга чисел:</h3>
+        <input type="number" id="numberInput" placeholder="Введіть число">
+        <button onclick="addNumber()">Додати число</button>
+        <button onclick="removeNumber()">Видалити число</button>
+        <p id="numberQueueResult"></p>
+    </section>
+
+    <!-- Завдання 3: Type Aliases -->
+    <section>
+        <h2>3. Type Aliases - Комбінування</h2>
+        <input type="text" id="input1" placeholder="Перше значення">
+        <input type="text" id="input2" placeholder="Друге значення">
+        <button onclick="combineValues()">Комбінувати</button>
+        <p id="combineResult"></p>
+    </section>
+
+    <!-- Завдання 4: Interfaces -->
+    <section>
+        <h2>4. Interfaces - Працівник</h2>
+        <button onclick="showWorkerInfo()">Показати інфо</button>
+        <p id="workerInfo"></p>
+        
+        <h3>Змінити зарплату:</h3>
+        <input type="number" id="newSalary" placeholder="Нова зарплата">
+        <button onclick="updateSalary()">Оновити зарплату</button>
+        <p id="salaryResult"></p>
+    </section>
+
+    <script src="homework.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
